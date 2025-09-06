@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Amir Foundation Education System</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f9ff;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #0047ab;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        header img {
+            width: 120px;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+
+        header img:hover {
+            transform: scale(1.1);
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 15px 0;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.5em;
+            font-weight: 300;
+        }
+
+        nav {
+            background-color: #0062cc;
+            padding: 15px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 15px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            background-color: #0047ab;
+            transform: translateY(-2px);
+        }
+
+        .hero {
+            background-color: #e9f0ff;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            color: #0047ab;
+            margin: 0;
+            font-weight: 600;
+            animation: fadeIn 1s;
+        }
+
+        .hero p {
+            font-size: 1.8em;
+            color: #666;
+            margin-top: 15px;
+            animation: fadeIn 1s;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+            transition: transform 0.3s, opacity 0.3s;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideIn 0.5s forwards;
+        }
+
+        .section h2 {
+            font-size: 2.5em;
+            color: #0047ab;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.2em;
+            color: #666;
+            margin: 10px 0;
+            font-weight: 300;
+        }
+
+        .about-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            gap: 20px;
+        }
+
+        .about-content img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .about-content img:hover {
+            transform: scale(1.05);
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            gap: 20px;
+        }
+
+        .contact-info div {
+            width: 45%;
+            margin: 20px 0;
+        }
+
+        footer {
+            background-color: #0047ab;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        footer p.credit {
+            margin-top: 10px;
+        }
+
+        footer a {
+            color: #00bfff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkwypC2hu6jqZQa0YBr-UyGvXUsDkap1ETOw&s" alt="School Logo">
+        <h1>Al Amir Foundation Education System</h1>
+        <p>Learn, Lead, Succeed</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#mission">Our Mission & Vision</a>
+        <a href="#academics">Academics</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#student-life">Student Life</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#news">News & Events</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <div class="hero">
+        <div>
+            <h1>Welcome to Al Amir Foundation Education System</h1>
+            <p>Where Excellence Meets Education</p>
+        </div>
+    </div>
+
+    <section id="about" class="section">
+        <h2>About Our School</h2>
+        <div class="about-content">
+            <img src="https://th.bing.com/th/id/OIP.XnikzX5OHW6G7AB9vF5vSQHaHa?rs=1&pid=ImgDetMain" alt="School Campus">
+            <div>
+                <p>Al Amir Foundation Education System is committed to excellence in education. Our principal, <span
+                        class="highlight">Mubina Shaheen</span>, along with Class 9th teacher <span
+                        class="highlight">Sir Shahid Rasool</span>, ensures a learning environment where every student
+                    achieves their full potential.</p>
+                <p>We focus on holistic development, providing academic, moral, and social education.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="mission" class="section">
+        <h2>Our Mission & Vision</h2>
+        <p>Our mission is to empower students with the knowledge and skills they need to succeed in life. Our vision is to be a beacon of excellence in education, nurturing future leaders.</p>
+        <p>We strive to create a supportive environment that encourages students to explore their interests and talents.</p>
+    </section>
+
+    <section id="facilities" class="section">
+        <h2>Our Facilities</h2>
+        <p>We offer state-of-the-art facilities including:</p>
+        <ul style="list-style: none; padding: 0;">
+            <li>Modern science labs equipped for practical experiments</li>
+            <li>A comprehensive library with a vast collection of books</li>
+            <li>Spacious sports grounds for various activities</li>
+            <li>Technology-enabled classrooms for interactive learning</li>
+        </ul>
+    </section>
+
+    <section id="student-life" class="section">
+        <h2>Student Life</h2>
+        <p>Our students enjoy a vibrant campus life with numerous extracurricular activities, including:</p>
+        <ul>
+            <li>Sports teams for football, basketball, and cricket</li>
+            <li>Art and music programs to nurture creativity</li>
+            <li>Debate and drama clubs to enhance communication skills</li>
+            <li>Leadership opportunities through student council</li>
+        </ul>
+    </section>
+
+    <section id="achievements" class="section">
+        <h2>Our Achievements</h2>
+        <p>We are proud of our numerous academic and extracurricular achievements:</p>
+        <ul>
+            <li>Top rankings in regional and national exams</li>
+            <li>Winners of several inter-school competitions</li>
+            <li>Outstanding performances in sports and arts</li>
+        </ul>
+    </section>
+
+    <section id="testimonials" class="section">
+        <h2>Testimonials</h2>
+        <p>Hear what our students, parents, and teachers have to say:</p>
+        <p>"Al Amir has been a life-changing experience for my child. The teachers are dedicated and genuinely care about the students." - Parent</p>
+        <p>"I love the school spirit and the supportive environment! It encourages me to do my best." - Student</p>
+    </section>
+
+    <section id="news" class="section">
+        <h2>News & Events</h2>
+        <p>Stay updated with our latest news and events:</p>
+        <ul>
+            <li>Annual Sports Day - March 15, 2025</li>
+            <li>Parent-Teacher Meeting - April 10, 2025</li>
+            <li>School Science Fair - May 20, 2025</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to learn more about our school, feel free to reach out!</p>
+        <div class="contact-info">
+            <div>
+                <h3>Visit Us:</h3>
+                <p>Near 65XM+5J2 AAFES || Boys Campus, Sukho, Rawalpindi</p>
+            </div>
+            <div>
+                <h3>Email Us:</h3>
+                <p><a href="mailto:info@alamirfoundation.edu">info@alamirfoundation.edu</a></p>
+            </div>
+            <div>
+                <h3>Call Us:</h3>
+                <p>(123) 456-7890</p>
+            </div>
+            <div>
+                <h3>Follow Us:</h3>
+                <p>
+                    <a href="#">Facebook</a> | 
+                    <a href="#">Twitter</a> | 
+                    <a href="#">Instagram</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Al Amir Foundation Education System. All rights reserved.</p>
+        <p class="credit">Website designed by <a href="#">Muhummad Asim</a></p>
+    </footer>
+
+</body>
+
+</html>
